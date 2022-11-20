@@ -2,7 +2,7 @@
 
 ## How to use with Docker (Recomended)
 
-Just use docker compose command
+### Enter the host folder and just use docker compose command
 
 ```shell
 docker compose up -d
