@@ -1,0 +1,19 @@
+version: "3.9"
+services:
+  shop:
+    build: ./shop-app
+    container_name: shop-app
+    ports:
+      - "3000:3000"
+    networks:
+      - micro_frontend
+  main:
+    build: ./main-app
+    container_name: main-app
+    ports:
+      - "3001:3001"
+    networks:
+      - micro_frontend
+
+networks:
+  micro_frontend:
