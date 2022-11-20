@@ -1,13 +1,17 @@
 import dynamic from 'next/dynamic'
-import styles from '../styles/Home.module.css'
 
 const Header = dynamic(() => import('shop/header'))
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Header />
-      <h1>Main</h1>
+      <section style={{
+        backgroundColor: '#c76e0e',
+        padding: '1rem',
+      }}>
+      <h1>Main Header</h1>
+      </section>
     </div>
   )
 }

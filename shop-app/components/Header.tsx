@@ -1,33 +1,13 @@
-import Link from "next/link";
+import * as S from './styles'
 
 const Header = () => {
   return (
-    <div
-      style={{
-        background: 'black',
-        width: '100%',
-        height: '100px',
-        color: 'white',
-        textAlign: 'center',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'left',
-        alignItems: 'center',
-        gap: '1rem',
-        fontSize: '24px',
-        paddingLeft: '15px'
-      }}>
-      Shop Header
+    <S.Main>
+      <h1>Shop Header</h1>
       <nav>
-        <div style={{
-          borderRadius: '8px',
-          backgroundColor: '#D1D1D1',
-          padding: '1rem 2rem',
-        }}>
-        <Link href='/about'>About</Link>
-        </div>
+        <S.NavLink href='/about'>About</S.NavLink>
       </nav>
-    </div>
+    </S.Main>
   );
 };
 

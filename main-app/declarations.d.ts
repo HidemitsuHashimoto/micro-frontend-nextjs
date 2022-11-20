@@ -1,5 +1,2 @@
 declare module "shop/header"
-declare module "shop/Header"
-declare module "shop"
-declare module "shop/shop"
-declare module "shop/ShopHeader"
+declare module "shop/about"

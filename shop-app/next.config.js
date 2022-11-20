@@ -10,6 +10,7 @@ module.exports = {
         remotes: {},
         exposes: {
           "./header": "./components/Header",
+          "./about": "./pages/about",
         },
         shared: {}
       })
