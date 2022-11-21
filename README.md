@@ -1,6 +1,17 @@
 # micro-frontend-nextjs
 
 ## How to use with Docker (Recomended)
+### Change main config
+First you need check main-app/next.config.js and change remotes host accordingly your Operation System.
+
+```
+remotes: {
+  // For Windows use host.docker.internal
+  shop: `shop@http://host.docker.internal:3000/_next/static/${isServer ? 'ssr' : 'chunks'}/remoteEntry.js`,
+  // For Linux use 172.17.0.1
+  // shop: `shop@http://172.17.0.1:3000/_next/static/${isServer ? 'ssr' : 'chunks'}/remoteEntry.js`,
+},
+```
 
 ### Enter the host folder and just use docker compose command
 
